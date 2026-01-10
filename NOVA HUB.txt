@@ -7,7 +7,7 @@ local vu2 = vu1:MakeWindow({
 vu2:NewMinimizer({
     ["KeyCode"] = Enum.KeyCode.LeftControl
 }):CreateMobileMinimizer({
-    ["Image"] = "rbxassetid://97823103843477",
+    ["Image"] = "rbxassetid://1374470191",
     ["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
 })
 local v3 = vu2:MakeTab({
