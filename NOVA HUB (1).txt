@@ -10,6 +10,23 @@ vu2:NewMinimizer({
     ["Image"] = "rbxassetid://1374470191",
     ["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
 })
+minimizer.Size = UDim2.new(0, 75, 0, 75)
+minimizer.BackgroundColor3 = Color3.fromRGB(0, 255, 255)
+minimizer.BackgroundTransparency = 0.3
+
+local corner = Instance.new("UICorner", minimizer)
+corner.CornerRadius = UDim.new(1, 0)
+
+local stroke = Instance.new("UIStroke", minimizer)
+stroke.Thickness = 4
+stroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+
+task.spawn(function()
+    while task.wait() do
+        stroke.Color = Color3.fromHSV(tick() % 5 / 5, 1, 1)
+    end
+end)
+
 local v3 = vu2:MakeTab({
     "Discord",
     "rbxassetid://10723415903"
