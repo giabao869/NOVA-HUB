@@ -4214,9 +4214,9 @@ function CheckItemBPCRBPCR(p572)
     end
 end
 local vu577 = loadstring(game:HttpGet("https://raw.githubusercontent.com/AnhDangNhoEm/UiRedz/refs/heads/main/RedzUiV.txt"))():MakeWindow({
-    ["Title"] = "NOVA Hub"
+    ["Title"] = "nova"
     ["SubTitle"] = "by real_nova",
-    ["SaveFolder"] = "Redz | Redz menu premium"
+    ["SaveFolder"] = "Redz | redz lib v5.lua"
 })
 local v578 = Instance.new("ScreenGui")
 v578.Name = "ControlGUI"
